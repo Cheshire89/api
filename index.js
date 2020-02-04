@@ -13,6 +13,12 @@ const fs = require('fs');
 const handlers = require('./lib/handlers');
 const helpers = require('./lib/helpers');
 
+// @TODO get rid of this
+
+helpers.sendTwillioSms('7209887454', 'My Twillio Test message', (err) => {
+    console.log('this was the twillo error', err);
+})
+
 // Instantiate a http httpServer
 const httpServer = http.createServer((req, res) => unifiedServer(req, res));
 
