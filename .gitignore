@@ -106,4 +106,4 @@ dist
 
 # environment variables
 lib/config.js
-https
+https/
